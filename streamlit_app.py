@@ -3,6 +3,17 @@ import os
 from app import crop_images_in_folder, remove_background
 
 def main():
+    """Main function for the image processing application.
+    
+    This function sets up the Streamlit interface for processing images. It allows users to input a folder path,
+    crop images, and remove backgrounds from images in the specified folder.
+    
+    Args:
+        None
+    
+    Returns:
+        None: This function doesn't return anything, but it creates a Streamlit UI and performs image processing operations.
+    """
     st.title("Procesamiento de Imágenes")
 
     base_folder = st.text_input("Ruta de la carpeta de imágenes:", "C:/Users/dmedina/Documents/Daniel/Ucc/10mo/Electiva 3/Prueba/Accipiter sp")
