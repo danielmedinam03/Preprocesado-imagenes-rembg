@@ -34,6 +34,15 @@ def crop_images_in_folder(folder_path, output_size=(224, 224)):
 
 def remove_background(input_folder, output_folder):
     
+    """Removes the background from images in a given input folder and saves the processed images to an output folder.
+    
+    Args:
+        input_folder (str): Path to the folder containing input images.
+        output_folder (str): Path to the folder where processed images will be saved.
+    
+    Returns:
+        None: This function doesn't return any value, but prints a message upon completion.
+    """
     os.makedirs(output_folder, exist_ok=True)
 
     for filename in os.listdir(input_folder):
